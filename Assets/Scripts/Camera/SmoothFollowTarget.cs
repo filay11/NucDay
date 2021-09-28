@@ -5,10 +5,9 @@ public class SmoothFollowTarget : MonoBehaviour
     public GameObject Target;
     public float LeftBorder;
     public float RightBorder;
-    [SerializeField] private float _speed = 5;
 
+    [SerializeField] private float _speed = 5;
     private Vector3 _offset;
-    private Vector3 _currentPos;
     
     private void Awake()
     {
