@@ -4,34 +4,34 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public CharacterStats characterDefinition_Template; // defaults stats
-    public CharacterStats characterDefinition;          // current stats
+    public CharacterStats CharacterDefinition_Template; // defaults stats
+    public CharacterStats CharacterDefinition;          // current stats
 
     private void Awake()
     {
-        if (characterDefinition_Template != null)
+        if (CharacterDefinition_Template != null)
         {
-            characterDefinition = Instantiate(characterDefinition_Template);
+            CharacterDefinition = Instantiate(CharacterDefinition_Template);
         }
     }
 
     public void TakeDamage(int amount)
     {
-        characterDefinition.TakeDamage(amount);
+        CharacterDefinition.TakeDamage(amount);
     }
 
     public float GetHealth()
     {
-        return characterDefinition.CurrentHealth;
+        return CharacterDefinition.CurrentHealth;
     }
 
     public float GetDamage()
     {
-        return characterDefinition.Damage;
+        return CharacterDefinition.Damage;
     }
     
     public float GetMoveSpeed()
     {
-        return characterDefinition.MoveSpeed;
+        return CharacterDefinition.MoveSpeed;
     }
 }

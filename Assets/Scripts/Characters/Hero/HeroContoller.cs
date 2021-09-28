@@ -11,7 +11,7 @@ public class HeroContoller : MonoBehaviour
         var character = GetComponent<Character>();
         if (character != null)
         {
-            _characterStats = character.characterDefinition;
+            _characterStats = character.CharacterDefinition;
         }
     }
 
